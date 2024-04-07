@@ -15,6 +15,11 @@ public class PlayerService {
     private List<Player> players = new ArrayList<>();
     AtomicInteger id = new AtomicInteger();
 
+    public PlayerService(List<Player> players) {
+        this.players = players;
+        this.id = id;
+    }
+
     public List<Player> findAll() {
         return players;
     }
